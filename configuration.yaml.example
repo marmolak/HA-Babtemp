@@ -1,0 +1,3 @@
+sensor:
+  - platform: babtemp_sensor
+    scan_interval: 300
