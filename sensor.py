@@ -1,7 +1,10 @@
 """Platform for sensor integration."""
 from __future__ import annotations
+from datetime import timedelta
 import requests
 from datetime import datetime
+
+SCAN_INTERVAL = timedelta(minutes=5)
 
 from homeassistant.components.sensor import (
     SensorDeviceClass,
