@@ -34,7 +34,7 @@ class BabtempSensor(SensorEntity):
 
     def update(self) -> None:
         actual_time = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
-url = f"https://teplomery.gc-system.cz/modules/teplomery/graf_data.php?tab=1&mac=00204AF4E13E&lang=cs&time={actual_time}"
+        url = f"https://teplomery.gc-system.cz/modules/teplomery/graf_data.php?tab=1&mac=00204AF4E13E&lang=cs&time={actual_time}"
         response = requests.get(url)
         data = response.text
 
